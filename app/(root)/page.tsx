@@ -24,7 +24,7 @@ import profileImg from "@/public/profile-img.jpg";
 export const metadata: Metadata = {
   title: `${pagesConfig.home.metadata.title}`,
   description:
-    "Naman Barkiya - Applied AI Engineer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
+    "Abdulmajeed Abdullateef - Applied AI Engineer, Fullstack Developer working at the intersection of AI, data, and scalable software systems. Explore my projects, experience, and contributions.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -38,7 +38,7 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Applied AI Engineer",
+    jobTitle: "Applied AI Engineer,FullStack Developer,Web3 Developer",
     sameAs: [siteConfig.links.github, siteConfig.links.twitter],
   };
 
@@ -46,7 +46,7 @@ export default function IndexPage() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: "Next.js Portfolio Template",
+    name: "My Next.js Portfoli",
     applicationCategory: "DeveloperApplication",
     operatingSystem: "Web",
     offers: {
@@ -74,15 +74,15 @@ export default function IndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
+      <section className="space-y-6 pb-8 pt-6 mt-20 mb-20 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
           <Image
             src={profileImg}
-            height={100}
-            width={100}
-            sizes="100vw"
-            className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Naman Barkiya - Applied AI Engineer Portfolio"
+            height={5}
+            width={60}
+            sizes="20vw"
+            className="bg-primary rounded-full mt-70 mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
+            alt="Abdulmajeed Abdullateef - Applied AI Engineer Portfolio"
             priority
           />
           <AnimatedText
@@ -90,7 +90,7 @@ export default function IndexPage() {
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Naman Barkiya
+            Abdulmajeed Abdullateef
           </AnimatedText>
           <AnimatedText
             as="h3"
@@ -127,7 +127,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label="Contact Abdulmajeed Abdullateef"
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>

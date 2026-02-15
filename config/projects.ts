@@ -29,14 +29,14 @@ export interface ProjectInterface {
 
 export const Projects: ProjectInterface[] = [
   {
-    id: "portfolio-template",
-    companyName: "Portfolio Website (130+ GitHub stars)",
+    id: "emjay-global",
+    companyName: "Emjay Global Marketplace",
     type: "Personal",
     category: ["Web Dev", "Frontend", "UI/UX"],
     shortDescription:
-      "Open-source Next.js portfolio template recognized and forked by developers worldwide, optimized for SEO/AEO and performance.",
-    websiteLink: "https://nbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/minimal-next-portfolio",
+      "A professional service-matching platform connecting clients with skilled handymen. Built with a focus on responsive UI/UX, dynamic service filtering, and optimized performance using core web technologies.",
+    // websiteLink: "https://nbarkiya.xyz", // Removed original reference
+    githubLink: "https://github.com/Abdulmajeed82/minimal-next-portfolio",
     techStack: [
       "Next.js",
       "React",
@@ -49,93 +49,57 @@ export const Projects: ProjectInterface[] = [
     endDate: new Date("2025-12-01"),
     companyLogoImg: "/logo.png",
     pagesInfoArr: [
-      {
-        title: "Landing & Sections",
+      {title: "Service Matching",
         description:
-          "A clean, minimal landing page with sections for skills, projects, contributions, and experience.",
-        imgArr: ["/profile-img.jpg"],
+          "Created a logic-based system to match user service requests with the appropriate handyman categories.",
+        imgArr: ["/projects/emjay-logo.png"],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "I created an open-source Next.js portfolio template to help developers ship a modern, responsive portfolio quickly.",
-        "The project focuses heavily on performance, clean typography, and strong SEO/AEO foundations, and it has been adopted and forked by developers globally.",
+        "Emjay Global is a full-stack marketplace solution designed to digitize the process of hiring local handymen and artisans.",
+        "By focusing on a clean User Interface and a robust backend logic, the platform simplifies the connection between service seekers and professional providers.",
       ],
       bullets: [
-        "Created an open-source Next.js portfolio template recognized and forked by developers worldwide.",
-        "Ranked #1 on ChatGPT search for “best Next.js portfolio template GitHub” through AEO/GEO optimization.",
-        "Maintained a fast, responsive UI with a minimal, themeable design system.",
+        "Developed a comprehensive service directory supporting multiple categories like plumbing, electrical, and carpentry.",
+        "Built a custom lead generation form that captures specific project requirements to provide accurate service matching.",
+        "Focused on SEO-friendly architecture to help local artisans gain better visibility online."
       ],
     },
   },
   {
-    id: "convot",
-    companyName: "Convot",
+    id: "banga-ecommerce",
+    companyName: "Banga Electronics & Gadget Store",
     type: "Personal",
     category: ["Full Stack", "Backend", "Web Dev"],
     shortDescription:
-      "Production-ready AI chatbot platform that crawls, indexes, and embeds knowledge from PDFs/URLs/text to deliver source-grounded answers via a one-line widget.",
-    techStack: ["Next.js", "React", "Node.js", "Typescript", "Python"],
+      "A specialized e-commerce platform for mobile phones and tech accessories. Developed with a focus on high-conversion product layouts, intuitive search functionality, and a streamlined checkout process for gadget enthusiasts",
+    techStack: ["Next.js", "React", "Node.js", "Typescript",],
     startDate: new Date("2024-04-01"),
     endDate: new Date("2024-10-01"),
-    companyLogoImg: "/logo.png",
+    companyLogoImg: "/Screenshot from 2026-02-15 22-38-23.png",
     pagesInfoArr: [
+      
       {
-        title: "Ingestion & Retrieval",
+        title: "Product Management",
         description:
-          "Designed ingestion and retrieval pipelines supporting multiple content sources with secure tenant isolation.",
-        imgArr: ["/logo.png"],
+          "Developed a dynamic catalog system for phones and gadgets with real-time availability updates.",
+        imgArr: ["/Screenshot from 2026-02-15 22-38-23.png"],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "Convot is a production-ready AI chatbot platform designed to be embedded on any website with a single line widget.",
-        "It supports crawling and indexing knowledge from PDFs, URLs, and plain text, and it returns context-aware, source-grounded answers with integrated analytics.",
+        "Banga Electronics is a specialized e-commerce platform built to provide a seamless shopping experience for mobile devices and tech accessories.",
+        "The project focuses on high-performance page loads and a mobile-first design, ensuring that customers can browse and purchase gadgets easily from any device.",
       ],
       bullets: [
-        "Built a production-ready AI chatbot platform with integrated analytics and a one-line embed widget.",
-        "Designed ingestion and retrieval pipelines to support multiple sources (PDFs, URLs, text) with tenant isolation.",
-        "Focused on reliability, security, and traceable answers by grounding responses in retrieved sources.",
+        "Architected a responsive frontend using HTML, CSS, and JavaScript for maximum cross-browser compatibility.",
+        "Implemented a custom search and filtering system to help users find specific phone models and accessory types quickly.",
+        "Optimized image delivery and assets to ensure fast performance even on slower mobile networks.",
       ],
     },
-  },
-  {
-    id: "the-super-focus",
-    companyName: "TheSuperFocus",
-    type: "Personal",
-    category: ["Full Stack", "Web Dev", "UI/UX"],
-    shortDescription:
-      "Pomodoro-inspired productivity web app with real-time sessions and recurring payments.",
-    techStack: [
-      "Next.js",
-      "React",
-      "Node.js",
-      "Socket.io",
-      "Typescript",
-      "MongoDB",
-    ],
-    startDate: new Date("2023-06-01"),
-    endDate: new Date("2023-12-01"),
-    companyLogoImg: "/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Realtime Focus Sessions",
-        description:
-          "Built real-time focus sessions using sockets to help people stay accountable and productive.",
-        imgArr: ["/logo.png"],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "TheSuperFocus is a productivity web app inspired by the Pomodoro technique, built to help users stay focused and complete deep-work sessions.",
-        "It includes real-time session support and a paid tier with recurring billing.",
-      ],
-      bullets: [
-        "Built a Pomodoro-inspired productivity web app using real-time sockets.",
-        "Integrated Razorpay for recurring payments, securing 10+ premium users.",
-      ],
     },
-  },
+  
   {
     id: "built-design",
     companyName: "Builtdesign",
@@ -281,7 +245,7 @@ export const Projects: ProjectInterface[] = [
     category: ["Mobile Dev", "Full Stack", "UI/UX"],
     shortDescription:
       "Developed a feature-rich mobile shopping application with admin panel, user authentication, and seamless product management using React Native and Firebase.",
-    githubLink: "https://github.com/namanbarkiya/apex-shopping-app",
+    // githubLink: "https://github.com/namanbarkiya/apex-shopping-app", // Removed original reference
     techStack: ["React Native", "Javascript", "Redux", "Node.js", "express.js"],
     startDate: new Date("2021-07-14"),
     endDate: new Date("2022-07-01"),
@@ -339,207 +303,38 @@ export const Projects: ProjectInterface[] = [
     },
   },
   {
-    id: "builtdesign-blogs",
-    companyName: "Builtdesign Blogs",
-    type: "Professional",
-    category: ["Web Dev", "Full Stack", "UI/UX"],
-    shortDescription:
-      "Crafted Builtdesign's vibrant Blogs Website using Netlify CMS and React for engaging content experiences.",
-    websiteLink: "https://blog.builtdesign.in",
-    techStack: ["Next.js", "React", "Node.js", "MongoDB", "Typescript"],
-    startDate: new Date("2022-03-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/builtdesign-blogs/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Blog Landing Page",
-        description:
-          "Modern and responsive landing page showcasing featured articles",
-        imgArr: ["/projects/builtdesign-blogs/blog_2.webp"],
-      },
-      {
-        title: "Blog Listing",
-        description:
-          "Organized display of all blog posts with search and filtering",
-        imgArr: ["/projects/builtdesign-blogs/blog_3.webp"],
-      },
-      {
-        title: "Category Navigation",
-        description: "Intuitive category-based navigation system",
-        imgArr: ["/projects/builtdesign-blogs/blog_1.webp"],
-      },
-      {
-        title: "Article View",
-        description:
-          "Clean and readable article layout with rich media support",
-        imgArr: [
-          "/projects/builtdesign-blogs/blog_4.webp",
-          "/projects/builtdesign-blogs/blog_5.webp",
-        ],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "As part of the Builtdesign platform, I developed a sophisticated blog website that serves as a content hub for the company's thought leadership and industry insights. The project leveraged Next.js and React to create a fast, SEO-friendly platform.",
-        "The blog platform features a modern, responsive design that prioritizes readability and user engagement. I implemented a robust content management system using Netlify CMS, enabling the content team to easily publish and manage blog posts.",
-        "The architecture includes server-side rendering for optimal performance and SEO, while MongoDB provides flexible content storage. TypeScript ensures code reliability and maintainability throughout the application.",
-        "Key features include category-based navigation, search functionality, and a rich text editor for content creation. The platform supports various content types including images, code snippets, and embedded media.",
-      ],
-      bullets: [
-        "Developed a modern blog platform using Next.js and React with TypeScript",
-        "Implemented Netlify CMS for efficient content management",
-        "Created a responsive design that prioritizes readability and user engagement",
-        "Built server-side rendering for optimal performance and SEO",
-        "Integrated MongoDB for flexible content storage and management",
-        "Developed category-based navigation and search functionality",
-        "Implemented rich text editing capabilities for content creation",
-      ],
-    },
-  },
-  {
-    id: "portfolio-card",
-    companyName: "Portfolio Card",
-    type: "Personal",
-    category: ["Web Dev", "Frontend", "3D Modeling"],
-    shortDescription:
-      "Forged an immersive 3D Portfolio Card utilizing the prowess of Three.js and Blender, where art and technology converge in an interactive masterpiece.",
-    websiteLink: "https://card.namanbarkiya.xyz/",
-    githubLink: "https://github.com/namanbarkiya/3d-portfolio-card",
-    techStack: ["React", "Javascript", "HTML 5", "CSS 3"],
-    startDate: new Date("2022-03-01"),
-    endDate: new Date("2022-07-01"),
-    companyLogoImg: "/projects/card/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Card Views",
-        description: "Front and back views of the interactive 3D card",
-        imgArr: ["/projects/card/card_2.webp", "/projects/card/card_3.webp"],
-      },
-      {
-        title: "Interactive Elements",
-        description:
-          "Custom links embedded in the 3D model with interactive animations",
-        imgArr: ["/projects/card/card_1.webp"],
-      },
-      {
-        title: "3D Model Development",
-        description: "Blender project showcasing the model creation process",
-        imgArr: ["/projects/card/card_4.webp"],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "In my personal, I've ventured into the world of creativity, fashioning a distinctive portfolio card through the utilization of Three.js.",
-        "This portfolio card transcends convention; it emerges as a captivating 3D model, adorned with meticulous lighting arrangements that conjure a spellbinding visual journey.",
-        "To materialize this concept, I've harnessed the combined potential of Three.js and Blender, orchestrating a meticulous crafting of the central 3D model that serves as the cornerstone of the card's allure.",
-        "Yet, the allure extends beyond aesthetics. I've ingeniously interwoven custom links directly into the fabric of Three.js components. Through the creation and seamless integration of novel components, these additions elegantly rest upon the card's surface, mirroring its rotations and delivering an interactive dimension to my portfolio.",
-        "The portfolio card itself is an opus of motion, perpetually swaying in an auto-rotational dance that unfurls its multifaceted essence. As an enhancement, I've introduced an instinctive user interaction element. A simple, intuitive drag of the card in specific directions grants viewers a comprehensive vantage, enabling exploration from every conceivable angle.",
-        "At its core, my personal epitomizes technical finesse, artistic expression, and interactive design. The amalgamation of Three.js, Blender's prowess, and the innovation of component integration has birthed not only a portfolio card, but a dynamic encounter leaving an indelible imprint on all who partake.",
-      ],
-      bullets: [
-        "Conceptualized and realized a distinct portfolio card using Three.js, highlighting creative exploration.",
-        "Crafted a mesmerizing 3D model enhanced by thoughtful lighting arrangements, resulting in a captivating visual voyage.",
-        "Leveraged the synergy of Three.js and Blender to meticulously sculpt and refine the central 3D model, embodying meticulous attention to detail.",
-        "Innovatively integrated custom links within Three.js components, introducing an interactive layer via seamlessly incorporated new elements.",
-        "Enabled an auto-rotating feature for the portfolio card, perpetually showcasing its various facets to observers.",
-        "Introduced an instinctual user interaction mechanism, allowing viewers to comprehensively explore the card's dimensions through simple, intuitive dragging motions.",
-        "Represented a fusion of technical prowess, artistic ingenuity, and interactive design in a project that reshapes the boundaries of conventional portfolio representation.",
-      ],
-    },
-  },
-  {
-    id: "cirql-dashboard",
-    companyName: "Cirql Dashboard",
+    id: "coffee-landing",
+    companyName: "Coffee Landing Page",
     type: "Personal",
     category: ["Web Dev", "Frontend", "UI/UX"],
     shortDescription:
-      "Created a dashboard project using React and Tailwind CSS, focusing on UI design and routing implementation.",
-    websiteLink: "https://cirql-ui.namanbarkiya.xyz/",
-    techStack: ["React", "Tailwind CSS", "Google Auth"],
-    startDate: new Date("2023-01-01"),
-    endDate: new Date("2023-02-15"),
-    companyLogoImg: "/projects/cirql/logo.png",
-    pagesInfoArr: [
-      {
-        title: "Dashboard Home",
-        description:
-          "Main dashboard view with analytics widgets and data visualization",
-        imgArr: ["/projects/cirql/web_1.png", "/projects/cirql/web_2.png"],
-      },
-      {
-        title: "Profile Page",
-        description:
-          "User profile management interface with customization options",
-        imgArr: ["/projects/cirql/web_3.png", "/projects/cirql/web_4.png"],
-      },
-    ],
-    descriptionDetails: {
-      paragraphs: [
-        "For the 'Cirql Dashboard' personal, I aimed to enhance my UI design skills and deepen my understanding of routing within a React application.",
-        "I utilized React and Tailwind CSS to craft an intuitive dashboard interface that provides users with an organized overview of data and functionalities. The UI components were thoughtfully designed to ensure a seamless user experience.",
-        "Incorporating Google Sign-In Authentication further fortified the project by adding a layer of security and convenience. Users are required to authenticate before accessing certain routes, ensuring the safety of sensitive information.",
-        "The routing system was meticulously implemented to enable smooth navigation between different sections of the dashboard, simulating real-world use cases.",
-        "Through this project, I've gained valuable insights into UI/UX design principles and the implementation of secure and efficient routing in React applications.",
-      ],
-      bullets: [
-        "Created a user-friendly dashboard project using React and Tailwind CSS.",
-        "Implemented Google Sign-In Authentication to ensure secure access to sensitive routes.",
-        "Designed UI components to provide an intuitive and visually pleasing experience.",
-        "Focused on implementing a smooth routing system to simulate real-world use cases.",
-        "Enhanced my skills in UI design, routing, and component architecture.",
-      ],
-    },
-  },
-  {
-    id: "inscript-hindi-typing",
-    companyName: "Inscript Hindi Typing",
-    type: "Personal",
-    category: ["Web Dev", "UI/UX"],
-    shortDescription:
-      "Developed a user-friendly website for Inscript Hindi typing, addressing the need for a simple tool for Hindi writers to convey data digitally.",
-    websiteLink: "https://hindityping.namanbarkiya.xyz",
-    githubLink: "https://github.com/namanbarkiya/inscript-hindi-keyboard",
+      "A visually appealing landing page for a coffee shop, featuring modern design, responsive layout, and interactive elements.",
     techStack: ["HTML 5", "CSS 3", "Javascript"],
-    startDate: new Date("2022-05-01"),
-    endDate: new Date("2022-06-15"),
-    companyLogoImg: "/projects/hindi-keyboard/logo.png",
+    startDate: new Date("2024-01-01"),
+    endDate: new Date("2024-03-01"),
+    companyLogoImg: "/coffee.png",
     pagesInfoArr: [
       {
-        title: "Typing Interface",
-        description: "Minimal and user-friendly Inscript Hindi typing area",
-        imgArr: ["/projects/hindi-keyboard/web_1.png"],
-      },
-      {
-        title: "Copy and Download the file",
+        title: "Hero Section",
         description:
-          "Export functionality allowing users to copy text or download as a document file",
-        imgArr: [
-          "/projects/hindi-keyboard/web_2.png",
-          "/projects/hindi-keyboard/web_3.png",
-        ],
+          "Attractive hero section with coffee imagery and call-to-action",
+        imgArr: ["/coffee.png"],
       },
     ],
     descriptionDetails: {
       paragraphs: [
-        "The 'Inscript Hindi Typing Website' project emerged from the need to provide a simple and accessible tool for Hindi writers, especially those in digital news and media, who wished to convey data in Hindi.",
-        "Recognizing the challenges posed by complex software in the market, I set out to create a minimalistic typing area that catered to the needs of a vast community of Hindi typists in India.",
-        "The project was designed to address the specific requirements of users familiar with the Inscript keyboard layout, mapping English and Hindi alphabets for seamless typing. The intuitive interface allowed users to effortlessly switch between languages, streamlining the process of content creation.",
-        "Leveraging HTML and CSS, I crafted the website's UI to ensure a user-friendly experience. Additionally, Local Storage was utilized to enable users to save and retrieve their work, enhancing convenience and productivity.",
-        "The website's focus on user experience and simplicity proved to be a key factor in its popularity among Hindi writers. By offering a tool that reduced the barriers to entry, I contributed to the digital empowerment of Hindi typists who previously faced challenges in conveying their message effectively.",
-        "This project marked one of my initial forays into web development and highlighted the transformative potential of technology in addressing real-world challenges.",
+        "Created a modern and responsive landing page for a coffee shop business.",
+        "The design focuses on creating an inviting atmosphere with warm colors and elegant typography.",
       ],
       bullets: [
-        "Developed a user-friendly website for Inscript Hindi typing.",
-        "Catered to the needs of Hindi writers in digital news and media.",
-        "Created a minimalistic and intuitive typing interface for the Inscript keyboard layout.",
-        "Mapped English and Hindi alphabets to provide a seamless typing experience.",
-        "Utilized HTML and CSS to design a user-friendly UI.",
-        "Implemented Local Storage to enable users to save and retrieve their work.",
-        "Contributed to the digital empowerment of Hindi typists by offering a simple tool.",
-        "Marked one of my first web development projects, showcasing technology's potential for addressing real-world needs.",
+        "Designed with semantic HTML5 and modern CSS3",
+        "Added interactive elements using vanilla JavaScript",
+        "Ensured full responsiveness across all devices",
+        "Optimized for fast loading and smooth animations",
       ],
     },
   },
 ];
 
+  
 export const featuredProjects = Projects.slice(0, 3);

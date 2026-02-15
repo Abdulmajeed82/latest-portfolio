@@ -1,10 +1,10 @@
 import "./globals.css";
 
-import { GoogleAnalytics } from "@next/third-parties/google";
+//import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter as FontSans } from "next/font/google";
 import localFont from "next/font/local";
 
-import { Analytics } from "@/components/common/analytics";
+//import { Analytics } from "@/components/common/analytics";
 import { ThemeProvider } from "@/components/common/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { siteConfig } from "@/config/site";
@@ -52,7 +52,7 @@ export const metadata = {
       {
         url: siteConfig.ogImage,
         width: 1200,
-        height: 630,
+        height: 530,
         alt: siteConfig.name,
       },
     ],
@@ -96,11 +96,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }: RootLayoutProps) {
-  const GA_ID = process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID;
-  if (!GA_ID) {
-    throw new Error("Missing Google Analytics ID");
-  }
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
@@ -126,12 +121,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           ]}
         >
           {children}
-          <Analytics />
           <Toaster />
           <ModalProvider />
         </ThemeProvider>
       </body>
-      <GoogleAnalytics gaId={GA_ID} />
     </html>
   );
-}
+};
